@@ -28,6 +28,8 @@ public class Arrow : MonoBehaviour
         Collider c = gameObject.GetComponent<Collider>();
         c.isTrigger = true;
 
+        gameObject.transform.parent = collision.gameObject.transform;
+
         if (collision.gameObject.tag == "Targets")
         {
             GUIController.instance.UpdatePoints(1);
