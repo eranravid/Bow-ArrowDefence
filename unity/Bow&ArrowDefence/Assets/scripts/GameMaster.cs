@@ -35,14 +35,18 @@ public class GameMaster : MonoBehaviour
         waveNumber++;
     }
 
-    public void HitGate(int d)
+    public void HitGate(int d, GameObject go)
     {
         lives -= d;
+        go.GetComponentInChildren<Animation>().Play("orcattack"); ; // destroy the target
     }
 
     public void HitTarget(GameObject go)
     {
-        points++;
-        go.gameObject.transform.parent.parent.GetComponent<Target>().KillTarget(); // destroy the target
+        go.gameObject.transform.parent.GetComponent<Target>().TargetHit();
+        points++;        
+        
     }
+
+    
 }

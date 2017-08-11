@@ -20,7 +20,7 @@ public class GUIController : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 	    wave.text = "Wave: " + GameMaster.instance.waveNumber;
-	    waveTime.text = "T: " + GameMaster.instance.timeToNextWave;
+	    waveTime.text = "T: " + Time.time.ToString("0.00");//GameMaster.instance.timeToNextWave;
         lives.text = "Lives: " + GameMaster.instance.lives;
 	    points.text = "Points: " + GameMaster.instance.points;
     }

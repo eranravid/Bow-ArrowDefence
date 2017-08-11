@@ -6,6 +6,7 @@ public class Target : MonoBehaviour {
 
     public float speed = 10f; // target's speed to next waypoint
     public int hitDamage = 1; // damage on hit
+    public int lifePoints = 1; // amount of damage before dead
 
     public WayPath waypath;
 
@@ -13,8 +14,9 @@ public class Target : MonoBehaviour {
     private bool reachedTarget = false; // reached the final target
     private int waypointIndex = 0; // current target index
     private float targetWaypointDistanceThreshold = 1.2f; // distance from target that consider as target reached
-    private float attackGateDistanceThreshold = 45.0f; // distance from Gate that consider as attackable distance
+    private float attackGateDistanceThreshold = 3.0f; // distance from Gate that consider as attackable distance
 
+    private bool isDead = false; // whether or not this target has started dying
     private bool canAttack = true; // whether this enemy target can attack, set by timer
     private float attackIntervalsDelay = 5.0f; // in seconds 
 
@@ -26,6 +28,9 @@ public class Target : MonoBehaviour {
 
     private void Update()
     {
+
+        if (isDead) return;
+
         if (reachedTarget == false)
         {
             // move target according to next target way point
@@ -64,16 +69,35 @@ public class Target : MonoBehaviour {
         waypointTarget = waypath.getWayPoint(waypointIndex);
     }
 
-    public void KillTarget()
+    public void TargetHit()
+    {
+        lifePoints--;
+        if (lifePoints <= 0)
+        {
+            StartCoroutine(KillTarget());
+        }
+    }
+
+    IEnumerator KillTarget()
+    {
+        isDead = true;
+        gameObject.GetComponentInChildren<Animation>().Play("orcdie"); ; // destroy the target
+        yield return new WaitForSeconds(2.3f);
+        DestroyTarget();
+    }
+
+    private void DestroyTarget()
     {
         Destroy(gameObject);
     }
 
     IEnumerator  AttackGate()
     {
-        GameMaster.instance.HitGate(hitDamage);
+        GameMaster.instance.HitGate(hitDamage, gameObject);
         canAttack = false;
         yield return new WaitForSeconds(attackIntervalsDelay);
         canAttack = true;
     }
+
+    
 }
