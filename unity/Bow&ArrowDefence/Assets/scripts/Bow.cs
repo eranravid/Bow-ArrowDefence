@@ -31,7 +31,7 @@ public class Bow : MonoBehaviour
         if (Input.GetMouseButton(0) && currentArrow != null)
         {
             mouseClicked = true;
-            float dist = Time.deltaTime * arrowBackSpeed;
+            float dist = Time.deltaTime / arrowBackSpeed  * maxArrowBackDist;
             if (bowString.transform.localPosition.x <= maxArrowBackDist)
             {
                 bowString.transform.localPosition = bowString.transform.localPosition + new Vector3(dist, 0, 0);

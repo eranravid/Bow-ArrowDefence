@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 917
-  m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 683, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 0
-  controlID: 25167
+  controlID: 3772
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 1237
     height: 917
-  m_MinSize: {x: 404, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 406, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 25168
+  controlID: 3773
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1237
     height: 646
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 25169
+  controlID: 3774
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 629
     height: 646
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -230,9 +230,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 366.50018, y: 837.4758, z: 0}
+    m_Target: {x: 715.2432, y: 736.916, z: 0}
     speed: 2
-    m_Value: {x: 366.50018, y: 837.4758, z: 0}
+    m_Value: {x: 715.2432, y: 736.916, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -259,9 +259,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 701.67847
+    m_Target: 913.7678
     speed: 2
-    m_Value: 701.67847
+    m_Value: 913.7678
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -335,19 +335,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/mini_orc_free/animation/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/mini_orc_free/animation/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\dev\unity\Bow&ArrowDefence\unity\Bow&ArrowDefence
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 71}
-    m_SelectedIDs: 70260000
-    m_LastClickedID: 9840
-    m_ExpandedIDs: 0000000070260000382800002a2a0000ac2b0000b22b0000fc3a0000bcd6010000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 103}
+    m_SelectedIDs: 5e2a0000
+    m_LastClickedID: 10846
+    m_ExpandedIDs: 000000007226000080270000d02700000828000084280000cc2a0000a02c0000a62c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -375,7 +375,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070260000382800002a2a0000ac2b0000b22b0000fc3a0000bcd6010000ca9a3bffffff7f
+    m_ExpandedIDs: 000000007226000080270000d027000084280000cc2a0000a02c0000a62c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,10 +400,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: c6fbffff
+    m_LastClickedInstanceID: -1082
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 000000000213fdff3a2a00005c6f0000da4900002491f8fffe280000f03a0000e0ccffff1a3b00000e3b0000023b0000
+    m_ExpandedInstanceIDs: 000000000213fdff3a2a00005c6f0000da4900002491f8fffe280000f03a0000e0ccffff1a3b00000e3b0000023b0000aa280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 292}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 25314
+  controlID: 3676
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -500,8 +500,8 @@ MonoBehaviour:
     y: 0
     width: 443
     height: 322
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -534,10 +534,10 @@ MonoBehaviour:
     width: 441
     height: 301
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: e041f4ff4e42f4ff5242f4ff0ecfffff6ed3ffff76d3ffff7ad3ffff7cd3ffff7ed3ffff92d3ffff94d3ffffb2d3ffffb4d3ffffb6d3ffffb8d3ffff8ef1ffff90f1ffff96f1ffff9af1ffffa4f1ffffa8f1fffffcf1ffffd2fbffff00000000fa2d00003e3200006a320000
+    scrollPos: {x: 0, y: 116}
+    m_SelectedIDs: c6fbffff
+    m_LastClickedID: -1082
+    m_ExpandedIDs: 86f8ffff88f8ffffc4fbffffc6fbffffd2fbffff00000000e42e000078330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
